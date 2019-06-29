@@ -1,10 +1,32 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
-	fmt.Print("Fix правка в коде!!!")
-	fmt.Print("Вторая правка в коде")
-	fmt.Print("Третья правка в коде")
+
+	fmt.Println("Программа страны: ")
+	fmt.Println("")
+
+	var coutries []string
+
+	coutries = []string{"Россия", "Китай", "США", "Германия", "Франция", "Италия", "Испания", "Англия"}
+	countCountries := len(coutries)
+
+	fmt.Println("")
+	fmt.Printf("Всего %v", countCountries)
+	fmt.Println("")
+	fmt.Println("")
+
+	for i := 0; i < countCountries; i++ {
+		currentName := coutries[i]
+
+		if currentName == "Италия" {
+			continue
+		}
+
+		fmt.Println(currentName + " !")
+	}
 
 }
