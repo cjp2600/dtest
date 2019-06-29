@@ -29,4 +29,8 @@ func main() {
 		fmt.Println(currentName + " !")
 	}
 
+	// Другой массив
+	for _, currentName := range coutries {
+		fmt.Println(currentName)
+	}
 }
